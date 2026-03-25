@@ -2,10 +2,3 @@ title: "y-kzm's profile"
 description: "y-kzm's profile"
 baseurl: "/profile"
 url: "https://y-kzm.github.io"
-
-remote_theme: pages-themes/primer@v0.6.0
-
-plugins:
-  - jekyll-remote-theme
-
-show_downloads: false

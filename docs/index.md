@@ -1,88 +1,239 @@
 ---
 layout: default
 title: "Home"
+
+author: "Kazuma Yokoo"
+
+keywords:
+  - IPv6
+  - Computer Network
+  - System Software
+  - Network Management
+
+sns:
+  - icon: "fab fa-github"
+    label: "GitHub"
+    url: "https://github.com/y-kzm"
+  - icon: "fab fa-x-twitter"
+    label: "X"
+    url: "https://twitter.com/yy_kzm"
+  - icon: "fas fa-blog"
+    label: "Hatena Blog"
+    url: "https://y-kzm.hatenablog.com/"
+
+about: |
+  - 所属:
+    - 広島大学 先進理工系科学研究科 情報科学プログラム 博士後期課程
+    - [先端ネットワーク研究室 (Network/Security R&D Group Advnet)](https://net.hiroshima-u.ac.jp/advnet/)
+    - HU SPRING [次世代フェロー](https://www.hiroshima-u.ac.jp/fellowship/adopters-list) (2025年〜)
+  - 叡啓大学 非常勤講師 (2025年〜)
+    - 担当科目: ICT入門・プログラミング入門
+
+events:
+  - year: "2026.3"
+    name: "IPv6ハンズオン2026 -IPv6-Mostly Networkを構築しよう-"
+    role: "講師"
+    url: "https://www.ipv6hiroshima.jp/%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/ipv6%E3%83%8F%E3%83%B3%E3%82%BA%E3%82%AA%E3%83%B32026"
+  - year: "2026.3"
+    name: "IPv6セミナー2026 Winter"
+    role: "一般参加"
+    url: "https://www.ipv6hiroshima.jp/%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/ipv6%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC2026winter"
+  - year: "2025.11"
+    name: "Internet Week 2025"
+    role: "講演者・一般参加・NOC (L2/L3)"
+    url: "https://internetweek.jp/2025/archives/program/c5"
+  #- year: "2025.11"
+  #  name: "ITRC meet58 @釧路市観光国際交流センター"
+  #  role: "口頭発表"
+  #  url: "https://www.itrc.net/meet/58-cfp/"
+  - year: "2025.11"
+    name: "2025年度 IPv6勉強会 (IPv6を学ぶ，動かす，理解する)"
+    role: "メンター"
+    url: "https://www.ipv6hiroshima.jp/%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/2025%E5%B9%B4%E5%BA%A6ipv6%E5%8B%89%E5%BC%B7%E4%BC%9Aipv6%E5%9F%BA%E7%A4%8E%E6%A4%9C%E5%AE%9A%E5%8F%97%E9%A8%93%E6%94%AF%E6%8F%B4"
+  - year: "2025.10"
+    name: "広島大学 HU SPRING 3QUESTIONS ～未来への3つの問い～"
+    role: "ポスター発表"
+    url: "https://www.hiroshima-u.ac.jp/fellowship/news/93038"
+  - year: "2025.11"
+    name: "3SNOG 2 Meeting @香川大学"
+    role: "一般参加"
+    url: "https://3snog.connpass.com/event/355550/"
+  #- year: "2025.7"
+  #  name: "COMPSAC2025 @York University in North Toronto, Canada"
+  #  role: "発表者 (Workshop)"
+  #  url: "https://ieeecompsac.computer.org/2025/"
+  - year: "2025.7"
+    name: "IPv6セミナー2025 Summer"
+    role: "一般参加"
+    url: "https://www.ipv6hiroshima.jp/%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/ipv6%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC2025summer"
+  #- year: "2025.6"
+  #  name: "インターネットアーキテクチャ研究会 (IA) @広島大学 東千田キャンパス"
+  #  role: "発表者"
+  #  url: "https://ken.ieice.org/ken/program/index.php?tgs_regid=ecd962f198d45cdc1bd15cc0fce03b36360fa2e399370fdd59d490d58a2cb8f4&tgid=IEICE-ICSS"
+  - year: "2025.3"
+    name: "17th APNG Camp"
+    role: "Fellowship"
+    url: "https://apngcamp.asia/17/"
+  - year: "2025.2"
+    name: "IETF発 ! 技術ハッカソンをやってみよう"
+    role: "参加者 (オンライン)"
+    url: "https://jpnic.connpass.com/event/343083/"
+  - year: "2025.2"
+    name: "IPv6セミナー2025 Winter"
+    role: "一般参加"
+    url: "https://www.ipv6hiroshima.jp/%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/ipv6%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC2025winter"
+  #- year: "2024.12"
+  #  name: "第 17 回 インターネットと運用技術シンポジウム (IOTS 2024) @東北大学医学部艮陵会館"
+  #  role: "発表者"
+  #  url: "https://www.iot.ipsj.or.jp/symposium/iots2024/"
+  - year: "2024.10"
+    name: "JPHACKS 2024 (Hack Day @広島会場)"
+    role: "参加者"
+    url: "https://jphacks.com/2024/"
+  - year: "2024.10"
+    name: "セキュリティ・ミニキャンプ in 沖縄 2024"
+    role: "チューター"
+    url: "https://www.security-camp.or.jp/minicamp/okinawa2024.html"
+  - year: "2024.8"
+    name: "2024年度 IPv6勉強会 (IPv6基礎検定の合格を目指そう)"
+    role: "メンター"
+    url: "https://www.ipv6hiroshima.jp/%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/2024%E5%B9%B4%E5%BA%A6ipv6%E5%8B%89%E5%BC%B7%E4%BC%9Aipv6%E5%9F%BA%E7%A4%8E%E6%A4%9C%E5%AE%9A%E5%8F%97%E9%A8%93%E6%94%AF%E6%8F%B4"
+  - year: "2024.8"
+    name: "セキュリティ・キャンプ2024 ネクスト"
+    role: "参加者"
+    url: "https://www.ipa.go.jp/jinzai/security-camp/2024/camp/next/index.html"
+  - year: "2024.7"
+    name: "JANOG54 @奈良"
+    role: "一般参加 (現地)"
+    url: "https://www.janog.gr.jp/meeting/janog54/"
+  - year: "2024.7"
+    name: "IPv6セミナー2024 Summer"
+    role: "一般参加"
+    url: "https://www.ipv6hiroshima.jp/%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/ipv6%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC2024summer"
+  - year: "2024.2"
+    name: "NTT Communications 現場受け入れ型インターンシップ"
+    role: "参加者"
+    url: "https://engineers.ntt.com/entry/2024/04/15/075523"
+  - year: "2024.2"
+    name: "IPv6セミナー2024 Winter"
+    role: "一般参加"
+    url: "https://www.ipv6hiroshima.jp/%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/ipv6%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC2024winter"
+  - year: "2023.12"
+    name: "学生向け｢学校対抗CTF大会｣ -集まれ未来のサイバーセキュリティ人材-"
+    role: "参加者"
+    url: "https://www.soumu.go.jp/soutsu/kinki/01sotsu07_01002090.html"
+  - year: "2023.8"
+    name: "2023年度 IPv6勉強会 (IPv6基礎検定の合格を目指そう)"
+    role: "参加者"
+    url: "https://www.ipv6hiroshima.jp/%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/2023%E5%B9%B4%E5%BA%A6-ipv6%E5%8B%89%E5%BC%B7%E4%BC%9Aipv6%E5%9F%BA%E7%A4%8E%E6%A4%9C%E5%AE%9A%E5%8F%97%E9%A8%93%E6%94%AF%E6%8F%B4"
+  - year: "2023.8"
+    name: "KLab Expert Camp 6"
+    role: "参加者"
+  - year: "2023.7"
+    name: "JANOG52 @長崎"
+    role: "一般参加 (現地)"
+    url: "https://www.janog.gr.jp/meeting/janog52/"
+  - year: "2023.6"
+    name: "IPv6セミナー2023 Summer"
+    role: "一般参加"
+    url: "https://sites.google.com/ipv6hiroshima.jp/www/%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/ipv6%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC2023summer"
+  - year: "2023.6"
+    name: "西日本横断サイバーセキュリティ・グランプリ @広島会場"
+    role: "参加者"
+    url: "https://www.soumu.go.jp/soutsu/kinki/topics/01sotsu07_01002069.html"
+  - year: "2023.3"
+    name: "ICTSC2022"
+    role: "参加者 (広島市立大学/ykkat)"
+    url: "https://icttoracon.net/archives/category/ictsc2022"
+  - year: "2023.3"
+    name: "IPv6 Summit in HIROSHIMA 2023"
+    role: "一般参加"
+    url: "https://www.ipv6hiroshima.jp/%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/ipv6%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC2023winter"
+  - year: "2023"
+    name: "SecHack365 2023"
+    role: "トレーニー"
+    url: "https://sechack365.nict.go.jp/achievement/2023/"
+  - year: "2022.7"
+    name: "JANOG50 @函館"
+    role: "スタッフ (NETCON)"
+    url: "https://www.janog.gr.jp/meeting/janog50/"
+  - year: "2022.6"
+    name: "Interop22"
+    role: "STM (Deploy組)"
+  - year: "2021.8"
+    name: "セキュリティ・キャンプ全国大会2021 オンライン (Z-IV: BGP自作ゼミ)"
+    role: "参加者"
+    url: "https://www.ipa.go.jp/jinzai/security-camp/2021/zenkoku/index.html"
+
+  #- year: ""
+  #  name: ""
+  #  role: ""
+  #  url: ""
+
+talks:
+#  - year: "202"
+#    title: ""
+#    event: "iw2025"
+#    #url: "https://..."
+#  - year: "2025.11"
+#    title: "IPv6における端末への固有プレフィックス配布の現状と展望"
+#    event: "ITRC meet58 (北海道釧路市)"
+#    url: "https://example.com"
+#  - year: "202"
+#    title: ""
+#    event: "wide"
+#    #url: "https://..."
+#  - year: "202"
+#    title: ""
+#    event: "itrc青森"
+#    #url: "https://..."
+
+publications:
+  - year: "2025.7"
+    title: "A Proposal of Policy Routing per End-Host in IPv6 Site Multi-homing using NPTv6"
+    url: ""
+    authors: "著者"
+    venue: "掲載誌"
+  - year: "2025.6"
+    title: "IPv6サイトマルチホーム環境におけるRAを活用した経路制御のセキュリティに関する考察"
+    url: ""
+    authors: "著者"
+    venue: "掲載誌"
+  - year: "2025.3"
+    title: "SRv6ネットワークにおける可用帯域の推定精度に関する実験的評価"
+    url: "https://ipsj.ixsq.nii.ac.jp/records/2001664"
+    authors: "横尾 和真, 近堂 徹, 渡邉 英伸, 前田 香織, 相原 玲二"
+    venue: "情報処理学会論文誌, Vol.66, No.3, pp.475-483, 2025年3月."
+  - year: "2024.12"
+    title: "NPTv6を用いたIPv6サイトマルチホームにおけるエンドホスト単位のトラフィック制御手法の提案"
+    url: "https://ipsj.ixsq.nii.ac.jp/records/241305"
+    authors: "横尾 和真, 近堂 徹, 渡邉 英伸, 前田 香織, 相原 玲二"
+    venue: "情報処理学会インターネットと運用技術シンポジウム(IOTS)2024論文集, pp.25-32, 2024. (アラクサラネットワークス賞受賞, 優秀学生賞受賞)"
+  - year: "2023.6"
+    title: "SRv6ネットワークにおける可用帯域推定に対する一検討"
+    url: "https://ipsj.ixsq.nii.ac.jp/records/226771"
+    authors: "横尾 和真, 近堂 徹, 渡邉 英伸, 前田 香織"
+    venue: "情報処理学会 研究報告インターネットと運用技術（IOT）, 2023-IOT-62, no.7, pp.1-7, 2023年6月."
+
+oss:
+  - url: "https://github.com/radvd-project/radvd"
+    name: "radvd-project/radvd"
+    description: |
+      - [#234](https://github.com/radvd-project/radvd/pull/234)
+      - [(open)#276](https://github.com/radvd-project/radvd/pull/276)
+  - url: "https://github.com/YutaroHayakawa/go-ra"
+    name: "YutaroHayakawa/go-ra"
+    description: |
+      - [#20 Add PREF64 option support](https://github.com/YutaroHayakawa/go-ra/pull/20)
+  - url: "https://github.com/osrg/gobgp"
+    name: "osrg/gobgp"
+    description: |
+      - [(pushed)#2903](https://github.com/osrg/gobgp/pull/2903)
+  - url: "https://github.com/kait-cronos/sdplane-oss"
+    name: "kait-cronos/sdplane-oss"
+    description: "- Contributor"
+
+contact:
+  email_user: "kzm-yokoo"        # @より前
+  email_domain: "hiroshima-u.ac.jp"    # @より後
 ---
-
-<div class="profile-header">
-  <h1>y-kzm</h1>
-  <p class="profile-tagline">Security Engineer / Researcher</p>
-  <div class="sns-links">
-    <a href="https://github.com/y-kzm" class="sns-link" target="_blank" rel="noopener">
-      <i class="fab fa-github"></i> GitHub
-    </a>
-    <a href="https://twitter.com/" class="sns-link" target="_blank" rel="noopener">
-      <i class="fab fa-x-twitter"></i> X
-    </a>
-    <!-- 他のSNSはここに追加 -->
-    <!-- 例:
-    <a href="https://linkedin.com/in/..." class="sns-link" target="_blank" rel="noopener">
-      <i class="fab fa-linkedin"></i> LinkedIn
-    </a>
-    <a href="https://zenn.dev/..." class="sns-link" target="_blank" rel="noopener">
-      <i class="fas fa-pen-nib"></i> Zenn
-    </a>
-    -->
-  </div>
-</div>
-
-<div class="section">
-  <h2>About</h2>
-  <p class="about-text">
-    <!-- 自己紹介文を書いてください -->
-  </p>
-</div>
-
-<div class="section">
-  <h2>OSS Contributions</h2>
-  <div class="oss-grid">
-    <div class="oss-card">
-      <a href="https://github.com/..." class="oss-card-title" target="_blank" rel="noopener">
-        <i class="fab fa-github"></i> org/repo
-      </a>
-      <p class="oss-desc">貢献内容の簡単な説明</p>
-    </div>
-    <!-- 同じ形式でカードを追加 -->
-  </div>
-</div>
-
-<div class="section">
-  <h2>Publications</h2>
-  <ul class="item-list">
-    <li>
-      <span class="item-year">2024</span>
-      <div class="item-body">
-        <div class="item-title"><a href="#" target="_blank" rel="noopener">論文タイトル</a></div>
-        <div class="item-sub">著者名 · 掲載誌 / 会議名</div>
-      </div>
-    </li>
-    <!-- 追加エントリをここに -->
-  </ul>
-</div>
-
-<div class="section">
-  <h2>Talks</h2>
-  <ul class="item-list">
-    <li>
-      <span class="item-year">2024.xx</span>
-      <div class="item-body">
-        <div class="item-title">発表タイトル</div>
-        <div class="item-sub">イベント名</div>
-      </div>
-    </li>
-    <!-- 追加エントリをここに -->
-  </ul>
-</div>
-
-<div class="section">
-  <h2>Events</h2>
-  <ul class="item-list">
-    <li>
-      <span class="item-year">2024.xx</span>
-      <div class="item-body">
-        <div class="item-title">イベント名</div>
-        <div class="item-sub">参加形態（参加者 / 発表者 / スタッフ など）</div>
-      </div>
-    </li>
-    <!-- 追加エントリをここに -->
-  </ul>
-</div>

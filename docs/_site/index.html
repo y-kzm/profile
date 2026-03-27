@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>y-kzm's profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 15px;
+      line-height: 1.75;
+      color: #1e293b;
+      background: #f8fafc;
+    }
+
+    .page-wrapper {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 56px 24px 96px;
+    }
+
+    /* Header */
+    .profile-header {
+      margin-bottom: 52px;
+    }
+    .profile-header-inner {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+    .profile-avatar {
+      flex: 0 0 72px;
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #e2e8f0;
+    }
+    .profile-header-text { flex: 1; }
+    .profile-header h1 {
+      font-size: 1.875rem;
+      font-weight: 600;
+      color: #0f172a;
+      margin: 0 0 4px;
+      letter-spacing: -0.02em;
+    }
+    .profile-keywords {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin: 6px 0 0;
+    }
+    .profile-keyword {
+      font-size: 0.75rem;
+      color: #6366f1;
+      background: #f5f3ff;
+      border: 1px solid #e0e7ff;
+      border-radius: 99px;
+      padding: 1px 10px;
+    }
+    @media (max-width: 600px) {
+      .profile-avatar { width: 56px; height: 56px; flex: 0 0 56px; }
+      .profile-header h1 { font-size: 1.375rem; }
+    }
+    .sns-links {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .sns-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #475569;
+      text-decoration: none;
+      font-size: 0.8125rem;
+      padding: 5px 12px;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      background: #fff;
+      transition: border-color 0.15s, color 0.15s, background 0.15s;
+    }
+    .sns-link:hover {
+      border-color: #6366f1;
+      color: #6366f1;
+      background: #f5f3ff;
+    }
+    .sns-link i { font-size: 13px; }
+
+    /* Email reveal */
+    .email-reveal-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #475569;
+      font-size: 0.8125rem;
+      padding: 5px 12px;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      background: #fff;
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s, background 0.15s;
+      text-decoration: none;
+    }
+    .email-reveal-btn:hover {
+      border-color: #6366f1;
+      color: #6366f1;
+      background: #f5f3ff;
+    }
+    .email-reveal-btn i { font-size: 13px; }
+
+    /* Section */
+    .section {
+      margin-bottom: 44px;
+    }
+    .section h2 {
+      font-size: 0.6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #6366f1;
+      margin: 0 0 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    /* About */
+    .about-text {
+      color: #334155;
+      margin: 0;
+    }
+    .about-text a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .about-text a .ext-icon,
+    .item-title a .ext-icon {
+      font-size: 0.7em;
+      margin-left: 3px;
+      vertical-align: super;
+      color: #94a3b8;
+    }
+
+    /* OSS grid */
+    .oss-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+      gap: 10px;
+    }
+    .oss-card {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 14px 16px;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .oss-card:hover {
+      border-color: #6366f1;
+      box-shadow: 0 2px 10px rgba(99,102,241,0.1);
+    }
+    .oss-card-title {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 500;
+      font-size: 0.875rem;
+      color: #1e293b;
+      text-decoration: none;
+    }
+    .oss-card-title:hover { color: #6366f1; }
+    .oss-card-title i { font-size: 13px; color: #94a3b8; }
+    .oss-desc {
+      font-size: 0.8rem;
+      color: #64748b;
+      margin: 5px 0 0;
+    }
+    .oss-desc p { margin: 0; }
+    .oss-desc ul {
+      margin: 0;
+      padding-left: 1.2em;
+    }
+    .oss-desc li { line-height: 1.6; }
+    .oss-desc a {
+      color: #6366f1;
+      text-decoration: none;
+    }
+    .oss-desc a:hover { text-decoration: underline; }
+
+    /* Item list (papers, talks, events) */
+    .item-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .item-list li {
+      display: flex;
+      gap: 16px;
+      padding: 6px 0;
+      border-bottom: 1px solid #f1f5f9;
+    }
+    .item-list li:last-child { border-bottom: none; }
+    .item-year {
+      flex: 0 0 54px;
+      font-size: 0.75rem;
+      color: #94a3b8;
+      padding-top: 3px;
+      font-variant-numeric: tabular-nums;
+    }
+    .item-body { flex: 1; min-width: 0; }
+    .item-title {
+      font-weight: 500;
+      color: #1e293b;
+      font-size: 0.9rem;
+    }
+    .item-title a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .item-title a:hover { color: #6366f1; }
+    .item-sub {
+      font-size: 0.8125rem;
+      color: #64748b;
+      margin-top: 2px;
+    }
+    .tag {
+      display: inline-block;
+      font-size: 0.6875rem;
+      padding: 1px 8px;
+      border-radius: 99px;
+      background: #f1f5f9;
+      color: #475569;
+      margin-top: 5px;
+      margin-right: 3px;
+    }
+
+    @media (max-width: 600px) {
+      .page-wrapper { padding: 36px 18px 72px; }
+      .profile-header h1 { font-size: 1.5rem; }
+      .oss-grid { grid-template-columns: 1fr 1fr; }
+      .item-year { flex: 0 0 46px; }
+    }
+    @media (max-width: 400px) {
+      .oss-grid { grid-template-columns: 1fr; }
+    }
+
+    /* Show more */
+    .item-list.has-more li:last-child { border-bottom: 1px solid #f1f5f9; }
+    .item-more-wrap {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.35s ease;
+    }
+    .item-more-wrap .item-list { margin-top: 0; }
+    .show-more-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      margin-top: 10px;
+      padding: 4px 12px;
+      font-size: 0.8125rem;
+      color: #6366f1;
+      background: #f5f3ff;
+      border: 1px solid #e0e7ff;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .show-more-btn:hover {
+      background: #ede9fe;
+      border-color: #c4b5fd;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+
+    <div class="profile-header">
+      <div class="profile-header-inner">
+        <img src="img/icon.jpg" alt="Kazuma Yokoo" class="profile-avatar">
+        <div class="profile-header-text">
+          <h1>Kazuma Yokoo</h1>
+          
+          <div class="profile-keywords">
+            <span class="profile-keyword">IPv6</span><span class="profile-keyword">Computer Network</span><span class="profile-keyword">System Software</span><span class="profile-keyword">Network Management</span>
+          </div>
+          
+        </div>
+      </div>
+      <div class="sns-links">
+        
+        <a href="https://github.com/y-kzm" class="sns-link" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        
+        <a href="https://twitter.com/yy_kzm" class="sns-link" target="_blank" rel="noopener">
+          <i class="fab fa-x-twitter"></i> X
+        </a>
+        
+        <a href="https://y-kzm.hatenablog.com/" class="sns-link" target="_blank" rel="noopener">
+          <i class="fas fa-blog"></i> Hatena Blog
+        </a>
+        
+      </div>
+    </div><!-- /.profile-header -->
+
+    
+    <div class="section">
+      <h2>About</h2>
+      <div class="about-text"><ul>
+  <li>所属:
+    <ul>
+      <li>広島大学 先進理工系科学研究科 情報科学プログラム 博士後期課程</li>
+      <li><a href="https://net.hiroshima-u.ac.jp/advnet/">先端ネットワーク研究室 (Network/Security R&amp;D Group Advnet)</a></li>
+      <li>HU SPRING <a href="https://www.hiroshima-u.ac.jp/fellowship/adopters-list">次世代フェロー</a> (2025年〜)</li>
+    </ul>
+  </li>
+  <li>叡啓大学 非常勤講師 (2025年〜)
+    <ul>
+      <li>担当科目: ICT入門・プログラミング入門</li>
+    </ul>
+  </li>
+</ul>
+</div>
+    </div>
+    
+
+    
+    <div class="section">
+      <h2>Events</h2>
+      <ul class="item-list has-more">
+        
+        <li>
+          <span class="item-year">2026.3</span>
+          <div class="item-body">
+            <div class="item-title">
+              <a href="https://www.ipv6hiroshima.jp/%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/ipv6%E3%83%8F%E3%83%B3%E3%82%BA%E3%82%AA%E3%83%B32026" target="_blank" rel="noopener">IPv6ハンズオン2026 -IPv6-Mostly Networkを構築しよう-<i class="fas fa-up-right-from-square ext-icon"></i></a>
+            </div>
+            <div class="item-sub">講師</div>
+          </div>
+        </li>
+        
+        <li>
+          <span class="item-year">2026.3</span>
+          <div class="item-body">
+            <div class="item-title">
+              <a href="https://www.ipv6hiroshima.jp/%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/ipv6%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC2026winter" target="_blank" rel="noopener">IPv6セミナー2026 Winter<i class="fas fa-up-right-from-square ext-icon"></i></a>
+            </div>
+            <div class="item-sub">一般参加</div>
+          </div>
+        </li>
+        
+        <li>
+          <span class="item-year">2025.11</span>
+          <div class="item-body">
+            <div class="item-title">
+              <a href="https://internetweek.jp/2025/archives/program/c5" target="_blank" rel="noopener">Internet Week 2025<i class="fas fa-up-right-from-square ext-icon"></i></a>
+            </div>
+            <div class="item-sub">講演者・一般参加・NOC (L2/L3)</div>
+          </div>
+        </li>
+        
+        <li>
+          <span class="item-year">2025.11</span>
+          <div class="item-body">
+            <div class="item-title">
+              <a href="https://www.ipv6hiroshima.jp/%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/2025%E5%B9%B4%E5%BA%A6ipv6%E5%8B%89%E5%BC%B7%E4%BC%9Aipv6%E5%9F%BA%E7%A4%8E%E6%A4%9C%E5%AE%9A%E5%8F%97%E9%A8%93%E6%94%AF%E6%8F%B4" target="_blank" rel="noopener">2025年度 IPv6勉強会 (IPv6を学ぶ，動かす，理解する)<i class="fas fa-up-right-from-square ext-icon"></i></a>
+            </div>
+            <div class="item-sub">メンター</div>
+          </div>
+        </li>
+        
+        <li>
+          <span class="item-year">2025.10</span>
+          <div class="item-body">
+            <div class="item-title">
+              <a href="https://www.hiroshima-u.ac.jp/fellowship/news/93038" target="_blank" rel="noopener">広島大学 HU SPRING 3QUESTIONS ～未来への3つの問い～<i class="fas fa-up-right-from-square ext-icon"></i></a>
+            </div>
+            <div class="item-sub">ポスター発表</div>
+          </div>
+        </li>
+        
+      </ul>
+      
+      <div class="item-more-wrap" id="events-more">
+        <ul class="item-list">
+          
+          <li>
+            <span class="item-year">2025.11</span>
+            <div class="item-body">
+              <div class="item-title">
+                <a href="https://3snog.connpass.com/event/355550/" target="_blank" rel="noopener">3SNOG 2 Meeting @香川大学<i class="fas fa-up-right-from-square ext-icon"></i></a>
+              </div>
+              <div class="item-sub">一般参加</div>
+            </div>
+          </li>
+          
+          <li>
+            <span class="item-year">2025.7</span>
+            <div class="item-body">
+              <div class="item-title">
+                <a href="https://www.ipv6hiroshima.jp/%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/ipv6%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC2025summer" target="_blank" rel="noopener">IPv6セミナー2025 Summer<i class="fas fa-up-right-from-square ext-icon"></i></a>
+              </div>
+              <div class="item-sub">一般参加</div>
+            </div>
+          </li>
+          
+          <li>
+            <span class="item-year">2025.3</span>
+            <div class="item-body">
+              <div class="item-title">
+                <a href="https://apngcamp.asia/17/" target="_blank" rel="noopener">17th APNG Camp<i class="fas fa-up-right-from-square ext-icon"></i></a>
+              </div>
+              <div class="item-sub">Fellowship</div>
+            </div>
+          </li>
+          
+          <li>
+            <span class="item-year">2025.2</span>
+            <div class="item-body">
+              <div class="item-title">
+                <a href="https://jpnic.connpass.com/event/343083/" target="_blank" rel="noopener">IETF発 ! 技術ハッカソンをやってみよう<i class="fas fa-up-right-from-square ext-icon"></i></a>
+              </div>
+              <div class="item-sub">参加者 (オンライン)</div>
+            </div>
+          </li>
+          
+          <li>
+            <span class="item-year">2025.2</span>
+            <div class="item-body">
+              <div class="item-title">
+                <a href="https://www.ipv6hiroshima.jp/%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/ipv6%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC2025winter" target="_blank" rel="noopener">IPv6セミナー2025 Winter<i class="fas fa-up-right-from-square ext-icon"></i></a>
+              </div>
+              <div class="item-sub">一般参加</div>
+            </div>
+          </li>
+          
+          <li>
+            <span class="item-year">2024.10</span>
+            <div class="item-body">
+              <div class="item-title">
+                <a href="https://jphacks.com/2024/" target="_blank" rel="noopener">JPHACKS 2024 (Hack Day @広島会場)<i class="fas fa-up-right-from-square ext-icon"></i></a>
+              </div>
+              <div class="item-sub">参加者</div>
+            </div>
+          </li>
+          
+          <li>
+            <span class="item-year">2024.10</span>
+            <div class="item-body">
+              <div class="item-title">
+                <a href="https://www.security-camp.or.jp/minicamp/okinawa2024.html" target="_blank" rel="noopener">セキュリティ・ミニキャンプ in 沖縄 2024<i class="fas fa-up-right-from-square ext-icon"></i></a>
+              </div>
+              <div class="item-sub">チューター</div>
+            </div>
+          </li>
+          
+          <li>
+            <span class="item-year">2024.8</span>
+            <div class="item-body">
+              <div class="item-title">
+                <a href="https://www.ipv6hiroshima.jp/%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/2024%E5%B9%B4%E5%BA%A6ipv6%E5%8B%89%E5%BC%B7%E4%BC%9Aipv6%E5%9F%BA%E7%A4%8E%E6%A4%9C%E5%AE%9A%E5%8F%97%E9%A8%93%E6%94%AF%E6%8F%B4" target="_blank" rel="noopener">2024年度 IPv6勉強会 (IPv6基礎検定の合格を目指そう)<i class="fas fa-up-right-from-square ext-icon"></i></a>
+              </div>
+              <div class="item-sub">メンター</div>
+            </div>
+          </li>
+          
+          <li>
+            <span class="item-year">2024.8</span>
+            <div class="item-body">
+              <div class="item-title">
+                <a href="https://www.ipa.go.jp/jinzai/security-camp/2024/camp/next/index.html" target="_blank" rel="noopener">セキュリティ・キャンプ2024 ネクスト<i class="fas fa-up-right-from-square ext-icon"></i></a>
+              </div>
+              <div class="item-sub">参加者</div>
+            </div>
+          </li>
+          
+          <li>
+            <span class="item-year">2024.7</span>
+            <div class="item-body">
+              <div class="item-title">
+                <a href="https://www.janog.gr.jp/meeting/janog54/" target="_blank" rel="noopener">JANOG54 @奈良<i class="fas fa-up-right-from-square ext-icon"></i></a>
+              </div>
+              <div class="item-sub">一般参加 (現地)</div>
+            </div>
+          </li>
+          
+          <li>
+            <span class="item-year">2024.7</span>
+            <div class="item-body">
+              <div class="item-title">
+                <a href="https://www.ipv6hiroshima.jp/%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/ipv6%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC2024summer" target="_blank" rel="noopener">IPv6セミナー2024 Summer<i class="fas fa-up-right-from-square ext-icon"></i></a>
+              </div>
+              <div class="item-sub">一般参加</div>
+            </div>
+          </li>
+          
+          <li>
+            <span class="item-year">2024.2</span>
+            <div class="item-body">
+              <div class="item-title">
+                <a href="https://engineers.ntt.com/entry/2024/04/15/075523" target="_blank" rel="noopener">NTT Communications 現場受け入れ型インターンシップ<i class="fas fa-up-right-from-square ext-icon"></i></a>
+              </div>
+              <div class="item-sub">参加者</div>
+            </div>
+          </li>
+          
+          <li>
+            <span class="item-year">2024.2</span>
+            <div class="item-body">
+              <div class="item-title">
+                <a href="https://www.ipv6hiroshima.jp/%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/ipv6%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC2024winter" target="_blank" rel="noopener">IPv6セミナー2024 Winter<i class="fas fa-up-right-from-square ext-icon"></i></a>
+              </div>
+              <div class="item-sub">一般参加</div>
+            </div>
+          </li>
+          
+          <li>
+            <span class="item-year">2023.12</span>
+            <div class="item-body">
+              <div class="item-title">
+                <a href="https://www.soumu.go.jp/soutsu/kinki/01sotsu07_01002090.html" target="_blank" rel="noopener">学生向け｢学校対抗CTF大会｣ -集まれ未来のサイバーセキュリティ人材-<i class="fas fa-up-right-from-square ext-icon"></i></a>
+              </div>
+              <div class="item-sub">参加者</div>
+            </div>
+          </li>
+          
+          <li>
+            <span class="item-year">2023.8</span>
+            <div class="item-body">
+              <div class="item-title">
+                <a href="https://www.ipv6hiroshima.jp/%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/2023%E5%B9%B4%E5%BA%A6-ipv6%E5%8B%89%E5%BC%B7%E4%BC%9Aipv6%E5%9F%BA%E7%A4%8E%E6%A4%9C%E5%AE%9A%E5%8F%97%E9%A8%93%E6%94%AF%E6%8F%B4" target="_blank" rel="noopener">2023年度 IPv6勉強会 (IPv6基礎検定の合格を目指そう)<i class="fas fa-up-right-from-square ext-icon"></i></a>
+              </div>
+              <div class="item-sub">参加者</div>
+            </div>
+          </li>
+          
+          <li>
+            <span class="item-year">2023.8</span>
+            <div class="item-body">
+              <div class="item-title">
+                KLab Expert Camp 6
+              </div>
+              <div class="item-sub">参加者</div>
+            </div>
+          </li>
+          
+          <li>
+            <span class="item-year">2023.7</span>
+            <div class="item-body">
+              <div class="item-title">
+                <a href="https://www.janog.gr.jp/meeting/janog52/" target="_blank" rel="noopener">JANOG52 @長崎<i class="fas fa-up-right-from-square ext-icon"></i></a>
+              </div>
+              <div class="item-sub">一般参加 (現地)</div>
+            </div>
+          </li>
+          
+          <li>
+            <span class="item-year">2023.6</span>
+            <div class="item-body">
+              <div class="item-title">
+                <a href="https://sites.google.com/ipv6hiroshima.jp/www/%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/ipv6%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC2023summer" target="_blank" rel="noopener">IPv6セミナー2023 Summer<i class="fas fa-up-right-from-square ext-icon"></i></a>
+              </div>
+              <div class="item-sub">一般参加</div>
+            </div>
+          </li>
+          
+          <li>
+            <span class="item-year">2023.6</span>
+            <div class="item-body">
+              <div class="item-title">
+                <a href="https://www.soumu.go.jp/soutsu/kinki/topics/01sotsu07_01002069.html" target="_blank" rel="noopener">西日本横断サイバーセキュリティ・グランプリ @広島会場<i class="fas fa-up-right-from-square ext-icon"></i></a>
+              </div>
+              <div class="item-sub">参加者</div>
+            </div>
+          </li>
+          
+          <li>
+            <span class="item-year">2023.3</span>
+            <div class="item-body">
+              <div class="item-title">
+                <a href="https://icttoracon.net/archives/category/ictsc2022" target="_blank" rel="noopener">ICTSC2022<i class="fas fa-up-right-from-square ext-icon"></i></a>
+              </div>
+              <div class="item-sub">参加者 (広島市立大学/ykkat)</div>
+            </div>
+          </li>
+          
+          <li>
+            <span class="item-year">2023.3</span>
+            <div class="item-body">
+              <div class="item-title">
+                <a href="https://www.ipv6hiroshima.jp/%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/ipv6%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC2023winter" target="_blank" rel="noopener">IPv6 Summit in HIROSHIMA 2023<i class="fas fa-up-right-from-square ext-icon"></i></a>
+              </div>
+              <div class="item-sub">一般参加</div>
+            </div>
+          </li>
+          
+          <li>
+            <span class="item-year">2023</span>
+            <div class="item-body">
+              <div class="item-title">
+                <a href="https://sechack365.nict.go.jp/achievement/2023/" target="_blank" rel="noopener">SecHack365 2023<i class="fas fa-up-right-from-square ext-icon"></i></a>
+              </div>
+              <div class="item-sub">トレーニー</div>
+            </div>
+          </li>
+          
+          <li>
+            <span class="item-year">2022.7</span>
+            <div class="item-body">
+              <div class="item-title">
+                <a href="https://www.janog.gr.jp/meeting/janog50/" target="_blank" rel="noopener">JANOG50 @函館<i class="fas fa-up-right-from-square ext-icon"></i></a>
+              </div>
+              <div class="item-sub">スタッフ (NETCON)</div>
+            </div>
+          </li>
+          
+          <li>
+            <span class="item-year">2022.6</span>
+            <div class="item-body">
+              <div class="item-title">
+                Interop22
+              </div>
+              <div class="item-sub">STM (Deploy組)</div>
+            </div>
+          </li>
+          
+          <li>
+            <span class="item-year">2021.8</span>
+            <div class="item-body">
+              <div class="item-title">
+                <a href="https://www.ipa.go.jp/jinzai/security-camp/2021/zenkoku/index.html" target="_blank" rel="noopener">セキュリティ・キャンプ全国大会2021 オンライン (Z-IV: BGP自作ゼミ)<i class="fas fa-up-right-from-square ext-icon"></i></a>
+              </div>
+              <div class="item-sub">参加者</div>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+      <button class="show-more-btn" onclick="toggleMore(this,'events-more')">
+        <i class="fas fa-chevron-down" style="font-size:10px"></i><span> Show more</span>
+      </button>
+      
+    </div>
+    
+
+    
+
+    
+    <div class="section">
+      <h2>Publications</h2>
+      <ul class="item-list">
+        
+        <li>
+          <span class="item-year">2025.7</span>
+          <div class="item-body">
+            <div class="item-title">
+              <a href="" target="_blank" rel="noopener">A Proposal of Policy Routing per End-Host in IPv6 Site Multi-homing using NPTv6</a>
+            </div>
+            <div class="item-sub">著者</div>
+            <div class="item-sub">掲載誌</div>
+          </div>
+        </li>
+        
+        <li>
+          <span class="item-year">2025.6</span>
+          <div class="item-body">
+            <div class="item-title">
+              <a href="" target="_blank" rel="noopener">IPv6サイトマルチホーム環境におけるRAを活用した経路制御のセキュリティに関する考察</a>
+            </div>
+            <div class="item-sub">著者</div>
+            <div class="item-sub">掲載誌</div>
+          </div>
+        </li>
+        
+        <li>
+          <span class="item-year">2025.3</span>
+          <div class="item-body">
+            <div class="item-title">
+              <a href="https://ipsj.ixsq.nii.ac.jp/records/2001664" target="_blank" rel="noopener">SRv6ネットワークにおける可用帯域の推定精度に関する実験的評価</a>
+            </div>
+            <div class="item-sub">横尾 和真, 近堂 徹, 渡邉 英伸, 前田 香織, 相原 玲二</div>
+            <div class="item-sub">情報処理学会論文誌, Vol.66, No.3, pp.475-483, 2025年3月.</div>
+          </div>
+        </li>
+        
+        <li>
+          <span class="item-year">2024.12</span>
+          <div class="item-body">
+            <div class="item-title">
+              <a href="https://ipsj.ixsq.nii.ac.jp/records/241305" target="_blank" rel="noopener">NPTv6を用いたIPv6サイトマルチホームにおけるエンドホスト単位のトラフィック制御手法の提案</a>
+            </div>
+            <div class="item-sub">横尾 和真, 近堂 徹, 渡邉 英伸, 前田 香織, 相原 玲二</div>
+            <div class="item-sub">情報処理学会インターネットと運用技術シンポジウム(IOTS)2024論文集, pp.25-32, 2024. (アラクサラネットワークス賞受賞, 優秀学生賞受賞)</div>
+          </div>
+        </li>
+        
+        <li>
+          <span class="item-year">2023.6</span>
+          <div class="item-body">
+            <div class="item-title">
+              <a href="https://ipsj.ixsq.nii.ac.jp/records/226771" target="_blank" rel="noopener">SRv6ネットワークにおける可用帯域推定に対する一検討</a>
+            </div>
+            <div class="item-sub">横尾 和真, 近堂 徹, 渡邉 英伸, 前田 香織</div>
+            <div class="item-sub">情報処理学会 研究報告インターネットと運用技術（IOT）, 2023-IOT-62, no.7, pp.1-7, 2023年6月.</div>
+          </div>
+        </li>
+        
+      </ul>
+      
+    </div>
+    
+
+    
+    <div class="section">
+      <h2>OSS Contributions</h2>
+      <div class="oss-grid">
+        
+        <div class="oss-card">
+          <a href="https://github.com/radvd-project/radvd" class="oss-card-title" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i> radvd-project/radvd
+          </a>
+          <div class="oss-desc"><ul>
+  <li><a href="https://github.com/radvd-project/radvd/pull/234">#234</a></li>
+  <li><a href="https://github.com/radvd-project/radvd/pull/276">(open)#276</a></li>
+</ul>
+</div>
+        </div>
+        
+        <div class="oss-card">
+          <a href="https://github.com/YutaroHayakawa/go-ra" class="oss-card-title" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i> YutaroHayakawa/go-ra
+          </a>
+          <div class="oss-desc"><ul>
+  <li><a href="https://github.com/YutaroHayakawa/go-ra/pull/20">#20 Add PREF64 option support</a></li>
+</ul>
+</div>
+        </div>
+        
+        <div class="oss-card">
+          <a href="https://github.com/osrg/gobgp" class="oss-card-title" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i> osrg/gobgp
+          </a>
+          <div class="oss-desc"><ul>
+  <li><a href="https://github.com/osrg/gobgp/pull/2903">(pushed)#2903</a></li>
+</ul>
+</div>
+        </div>
+        
+        <div class="oss-card">
+          <a href="https://github.com/kait-cronos/sdplane-oss" class="oss-card-title" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i> kait-cronos/sdplane-oss
+          </a>
+          <div class="oss-desc"><ul>
+  <li>Contributor</li>
+</ul>
+</div>
+        </div>
+        
+      </div>
+    </div>
+    
+
+    
+    <div class="section">
+      <h2>Contact</h2>
+      <div class="sns-links">
+        
+        <button class="email-reveal-btn"
+          data-u="kzm-yokoo"
+          data-d="hiroshima-u.ac.jp"
+          onclick="(function(b){var a=b.dataset.u+'@'+b.dataset.d;b.outerHTML='<a href=\'mailto:'+a+'\' class=\'sns-link\'><i class=\'fas fa-envelope\'></i> '+a+'</a>'})(this)">
+          <i class="fas fa-envelope"></i> メールアドレスを表示
+        </button>
+        
+      </div>
+    </div>
+    
+
+  </div>
+  <script>
+    document.querySelectorAll('.about-text a').forEach(function(a) {
+      a.setAttribute('target', '_blank');
+      a.setAttribute('rel', 'noopener');
+      var icon = document.createElement('i');
+      icon.className = 'fas fa-up-right-from-square ext-icon';
+      a.appendChild(icon);
+    });
+
+    function toggleMore(btn, wrapperId) {
+      var wrap = document.getElementById(wrapperId);
+      var expanded = btn.dataset.expanded === 'true';
+      if (expanded) {
+        wrap.style.maxHeight = wrap.scrollHeight + 'px';
+        requestAnimationFrame(function() {
+          wrap.style.maxHeight = '0';
+        });
+      } else {
+        wrap.style.maxHeight = wrap.scrollHeight + 'px';
+      }
+      btn.dataset.expanded = expanded ? '' : 'true';
+      btn.querySelector('i').className = expanded ? 'fas fa-chevron-down' : 'fas fa-chevron-up';
+      btn.querySelector('i').style.fontSize = '10px';
+      btn.querySelector('span').textContent = expanded ? ' Show more' : ' Show less';
+    }
+  </script>
+</body>
+</html>

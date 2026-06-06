@@ -11,17 +11,19 @@
   <style>
     *, *::before, *::after { box-sizing: border-box; }
 
+    html { font-size: 17px; }
+
     body {
       margin: 0;
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      font-size: 15px;
+      font-size: 1rem;
       line-height: 1.75;
       color: #1e293b;
       background: #f8fafc;
     }
 
     .page-wrapper {
-      max-width: 740px;
+      max-width: 900px;
       margin: 0 auto;
       padding: 56px 24px 96px;
     }
@@ -314,7 +316,22 @@
     
     <div class="section">
       <h2>About</h2>
-      <div class="about-text"><ul>
+      <div class="about-text"><p>広島大学でコンピュータネットワークを研究している博士課程学生です。
+次世代インターネットの基盤技術である IPv6 を軸に、経路制御・計測・運用管理・セキュリティといった幅広い観点から、ネットワークの高度利用に取り組んでいます。</p>
+
+<p>「IPv6 だからこそ実現できる価値あるネットワークの創造」を目標に、研究と社会実装の橋渡しを志しています。
+JANOG や Internet Week といった技術イベントへの積極的な参加、OSS へのコントリビューション、IPv6 ハンズオンの開催、技術雑誌への寄稿など、研究の枠を超えた活動にも取り組んでいます。</p>
+
+<ul>
+  <li>Research Interests:
+    <ul>
+      <li>IPv6 / SRv6 / ポリシールーティング</li>
+      <li>ネットワーク運用管理</li>
+      <li>ネットワーク計測 (アクティブ計測・可用帯域推定)</li>
+      <li>ホームネットワーク / IoT (Thread・Matter)</li>
+      <li>IPv6 普及促進 / 社会実装 / 標準化</li>
+    </ul>
+  </li>
   <li>所属:
     <ul>
       <li>広島大学 先進理工系科学研究科 情報科学プログラム 博士後期課程</li>
@@ -325,6 +342,12 @@
   <li>叡啓大学 非常勤講師 (2025年〜)
     <ul>
       <li>担当科目: ICT入門・プログラミング入門</li>
+    </ul>
+  </li>
+  <li>経歴:
+    <ul>
+      <li>2023年3月 広島市立大学 情報科学部 卒業 — 学士 (情報工学)</li>
+      <li>2025年3月 広島大学 大学院先進理工系科学研究科 博士課程前期 修了 — 修士 (工学)</li>
     </ul>
   </li>
 </ul>
@@ -652,20 +675,37 @@
     
 
     
-
-    
     <div class="section">
-      <h2>Publications</h2>
-      <ul class="item-list">
+      <h2>Talks</h2>
+      <ul class="item-list has-more">
+        
+        <li>
+          <span class="item-year">2025.11</span>
+          <div class="item-body">
+            <div class="item-title">
+              <a href="https://internetweek.jp/2025/archives/program/c5" target="_blank" rel="noopener">IPv6-Mostly実証環境の構築とクライアントOS検証について</a>
+            </div>
+            <div class="item-sub">Internet Week 2025 (C5: IPv6-Mostly Networkで変わる運用のカタチ)</div>
+          </div>
+        </li>
+        
+        <li>
+          <span class="item-year">2025.11</span>
+          <div class="item-body">
+            <div class="item-title">
+              <a href="https://www.itrc.net/meet/58-cfp/" target="_blank" rel="noopener">IPv6における端末への固有プレフィックス配布の現状と展望</a>
+            </div>
+            <div class="item-sub">ITRC meet58 (北海道釧路市)</div>
+          </div>
+        </li>
         
         <li>
           <span class="item-year">2025.7</span>
           <div class="item-body">
             <div class="item-title">
-              <a href="" target="_blank" rel="noopener">A Proposal of Policy Routing per End-Host in IPv6 Site Multi-homing using NPTv6</a>
+              <a href="https://ieeecompsac.computer.org/2025/" target="_blank" rel="noopener">A Proposal of Policy Routing per End-Host in IPv6 Site Multi-homing using NPTv6</a>
             </div>
-            <div class="item-sub">著者</div>
-            <div class="item-sub">掲載誌</div>
+            <div class="item-sub">IEEE COMPSAC 2025 (Toronto, Canada)</div>
           </div>
         </li>
         
@@ -673,10 +713,122 @@
           <span class="item-year">2025.6</span>
           <div class="item-body">
             <div class="item-title">
-              <a href="" target="_blank" rel="noopener">IPv6サイトマルチホーム環境におけるRAを活用した経路制御のセキュリティに関する考察</a>
+              <a href="https://ken.ieice.org/ken/paper/20250623vcLB/" target="_blank" rel="noopener">IPv6サイトマルチホーム環境におけるRAを活用した経路制御のセキュリティに関する考察</a>
             </div>
-            <div class="item-sub">著者</div>
-            <div class="item-sub">掲載誌</div>
+            <div class="item-sub">電子情報通信学会 IA研究会 (広島県広島市)</div>
+          </div>
+        </li>
+        
+        <li>
+          <span class="item-year">2024.12</span>
+          <div class="item-body">
+            <div class="item-title">
+              <a href="https://www.iot.ipsj.or.jp/symposium/iots2024/" target="_blank" rel="noopener">NPTv6を用いたIPv6サイトマルチホームにおけるエンドホスト単位のトラフィック制御手法の提案</a>
+            </div>
+            <div class="item-sub">第17回 インターネットと運用技術シンポジウム (IOTS 2024) (宮城県仙台市)</div>
+          </div>
+        </li>
+        
+      </ul>
+      
+      <div class="item-more-wrap" id="talks-more">
+        <ul class="item-list">
+          
+          <li>
+            <span class="item-year">2023.12</span>
+            <div class="item-body">
+              <div class="item-title">
+                小規模ユーザサイトにおけるIPv6マルチホーム環境の課題とその解決に向けて
+              </div>
+              <div class="item-sub">WIDE研究会</div>
+            </div>
+          </li>
+          
+          <li>
+            <span class="item-year">2023.11</span>
+            <div class="item-body">
+              <div class="item-title">
+                <a href="https://www.itrc.net/meet/54-cfp/" target="_blank" rel="noopener">小規模ユーザサイトにおけるIPv6マルチホーム環境の課題とその解決に向けて</a>
+              </div>
+              <div class="item-sub">ITRC meet54 (青森県青森市)</div>
+            </div>
+          </li>
+          
+          <li>
+            <span class="item-year">2023.7</span>
+            <div class="item-body">
+              <div class="item-title">
+                <a href="https://www.iot.ipsj.or.jp/meeting/62-program/" target="_blank" rel="noopener">SRv6ネットワークにおける可用帯域推定に対する一検討</a>
+              </div>
+              <div class="item-sub">情報処理学会 第62回IOT研究会 (長崎県長崎市)</div>
+            </div>
+          </li>
+          
+          <li>
+            <span class="item-year">2022.12</span>
+            <div class="item-body">
+              <div class="item-title">
+                <a href="https://interlab.ait.ac.th/aintec2022/" target="_blank" rel="noopener">A Proposal of an Estimation Method of Network Resources using SRv6 for Dataflow Platform Management</a>
+              </div>
+              <div class="item-sub">AINTEC 2022 (広島県広島市・ポスター発表)</div>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+      <button class="show-more-btn" onclick="toggleMore(this,'talks-more')">
+        <i class="fas fa-chevron-down" style="font-size:10px"></i><span> Show more</span>
+      </button>
+      
+    </div>
+    
+
+    
+    <div class="section">
+      <h2>Publications</h2>
+      <ul class="item-list has-more">
+        
+        <li>
+          <span class="item-year">2026.5</span>
+          <div class="item-body">
+            <div class="item-title">
+              <a href="https://ipsj.ixsq.nii.ac.jp/records/2009646" target="_blank" rel="noopener">組織ネットワークにおけるIPv6-Mostly導入に向けた技術検証と課題整理</a>
+            </div>
+            <div class="item-sub">大脇 洋, <u>横尾 和真</u>, 丁 曄澎, 小川 康一, 近堂 徹</div>
+            <div class="item-sub">情報処理学会 研究報告インターネットと運用技術（IOT）, 2026-IOT-73, no.1, pp.1-7, 2026年5月.</div>
+          </div>
+        </li>
+        
+        <li>
+          <span class="item-year">2025.7</span>
+          <div class="item-body">
+            <div class="item-title">
+              <a href="https://doi.org/10.1109/COMPSAC65507.2025.00208" target="_blank" rel="noopener">A Proposal of Policy Routing per End-Host in IPv6 Site Multi-homing using NPTv6</a>
+            </div>
+            <div class="item-sub"><u>Kazuma Yokoo</u>, Tohru Kondo, Hidenobu Watanabe, Kaori Maeda, Reiji Aibara</div>
+            <div class="item-sub">Proc. of IEEE 49th Annual Computers, Software, and Applications Conference (COMPSAC 2025), pp.1559-1564, July 2025.</div>
+          </div>
+        </li>
+        
+        <li>
+          <span class="item-year">2025.6</span>
+          <div class="item-body">
+            <div class="item-title">
+              <a href="https://ken.ieice.org/ken/paper/20250623vcLB/" target="_blank" rel="noopener">IPv6サイトマルチホーム環境におけるRAを活用した経路制御のセキュリティに関する考察</a>
+            </div>
+            <div class="item-sub"><u>横尾 和真</u>, 近堂 徹, 渡邉 英伸, 前田 香織, 相原 玲二</div>
+            <div class="item-sub">電子情報通信学会 技術研究報告 (IA2025-1), vol.125, no.85, pp.1-7, 2025年6月.</div>
+          </div>
+        </li>
+        
+        <li>
+          <span class="item-year">2025.6</span>
+          <div class="item-body">
+            <div class="item-title">
+              <a href="https://ken.ieice.org/ken/paper/202506235cLb/" target="_blank" rel="noopener">パッシブ計測を活用したThreadメッシュネットワークのトポロジー可視化手法の検討</a>
+            </div>
+            <div class="item-sub">前大 光稔, <u>横尾 和真</u>, 丁 曄澎, 近堂 徹</div>
+            <div class="item-sub">電子情報通信学会 技術研究報告 (IA2025-5), vol.125, no.85, pp.24-29, 2025年6月.</div>
           </div>
         </li>
         
@@ -686,34 +838,43 @@
             <div class="item-title">
               <a href="https://ipsj.ixsq.nii.ac.jp/records/2001664" target="_blank" rel="noopener">SRv6ネットワークにおける可用帯域の推定精度に関する実験的評価</a>
             </div>
-            <div class="item-sub">横尾 和真, 近堂 徹, 渡邉 英伸, 前田 香織, 相原 玲二</div>
+            <div class="item-sub"><u>横尾 和真</u>, 近堂 徹, 渡邉 英伸, 前田 香織, 相原 玲二</div>
             <div class="item-sub">情報処理学会論文誌, Vol.66, No.3, pp.475-483, 2025年3月.</div>
           </div>
         </li>
         
-        <li>
-          <span class="item-year">2024.12</span>
-          <div class="item-body">
-            <div class="item-title">
-              <a href="https://ipsj.ixsq.nii.ac.jp/records/241305" target="_blank" rel="noopener">NPTv6を用いたIPv6サイトマルチホームにおけるエンドホスト単位のトラフィック制御手法の提案</a>
-            </div>
-            <div class="item-sub">横尾 和真, 近堂 徹, 渡邉 英伸, 前田 香織, 相原 玲二</div>
-            <div class="item-sub">情報処理学会インターネットと運用技術シンポジウム(IOTS)2024論文集, pp.25-32, 2024. (アラクサラネットワークス賞受賞, 優秀学生賞受賞)</div>
-          </div>
-        </li>
-        
-        <li>
-          <span class="item-year">2023.6</span>
-          <div class="item-body">
-            <div class="item-title">
-              <a href="https://ipsj.ixsq.nii.ac.jp/records/226771" target="_blank" rel="noopener">SRv6ネットワークにおける可用帯域推定に対する一検討</a>
-            </div>
-            <div class="item-sub">横尾 和真, 近堂 徹, 渡邉 英伸, 前田 香織</div>
-            <div class="item-sub">情報処理学会 研究報告インターネットと運用技術（IOT）, 2023-IOT-62, no.7, pp.1-7, 2023年6月.</div>
-          </div>
-        </li>
-        
       </ul>
+      
+      <div class="item-more-wrap" id="publications-more">
+        <ul class="item-list">
+          
+          <li>
+            <span class="item-year">2024.12</span>
+            <div class="item-body">
+              <div class="item-title">
+                <a href="https://ipsj.ixsq.nii.ac.jp/records/241305" target="_blank" rel="noopener">NPTv6を用いたIPv6サイトマルチホームにおけるエンドホスト単位のトラフィック制御手法の提案</a>
+              </div>
+              <div class="item-sub"><u>横尾 和真</u>, 近堂 徹, 渡邉 英伸, 前田 香織, 相原 玲二</div>
+              <div class="item-sub">情報処理学会インターネットと運用技術シンポジウム(IOTS)2024論文集, pp.25-32, 2024. (アラクサラネットワークス賞受賞, 優秀学生賞受賞)</div>
+            </div>
+          </li>
+          
+          <li>
+            <span class="item-year">2023.6</span>
+            <div class="item-body">
+              <div class="item-title">
+                <a href="https://ipsj.ixsq.nii.ac.jp/records/226771" target="_blank" rel="noopener">SRv6ネットワークにおける可用帯域推定に対する一検討</a>
+              </div>
+              <div class="item-sub"><u>横尾 和真</u>, 近堂 徹, 渡邉 英伸, 前田 香織</div>
+              <div class="item-sub">情報処理学会 研究報告インターネットと運用技術（IOT）, 2023-IOT-62, no.7, pp.1-7, 2023年6月.</div>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+      <button class="show-more-btn" onclick="toggleMore(this,'publications-more')">
+        <i class="fas fa-chevron-down" style="font-size:10px"></i><span> Show more</span>
+      </button>
       
     </div>
     
@@ -729,7 +890,7 @@
           </a>
           <div class="oss-desc"><ul>
   <li><a href="https://github.com/radvd-project/radvd/pull/234">#234</a></li>
-  <li><a href="https://github.com/radvd-project/radvd/pull/276">(open)#276</a></li>
+  <li><a href="https://github.com/radvd-project/radvd/pull/276">#276</a></li>
 </ul>
 </div>
         </div>

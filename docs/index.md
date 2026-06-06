@@ -22,12 +22,27 @@ sns:
     url: "https://y-kzm.hatenablog.com/"
 
 about: |
+  広島大学でコンピュータネットワークを研究している博士課程学生です。
+  次世代インターネットの基盤技術である IPv6 を軸に、経路制御・計測・運用管理・セキュリティといった幅広い観点から、ネットワークの高度利用に取り組んでいます。
+
+  「IPv6 だからこそ実現できる価値あるネットワークの創造」を目標に、研究と社会実装の橋渡しを志しています。
+  JANOG や Internet Week といった技術イベントへの積極的な参加、OSS へのコントリビューション、IPv6 ハンズオンの開催、技術雑誌への寄稿など、研究の枠を超えた活動にも取り組んでいます。
+
+  - Research Interests:
+    - IPv6 / SRv6 / ポリシールーティング
+    - ネットワーク運用管理
+    - ネットワーク計測 (アクティブ計測・可用帯域推定)
+    - ホームネットワーク / IoT (Thread・Matter)
+    - IPv6 普及促進 / 社会実装 / 標準化
   - 所属:
     - 広島大学 先進理工系科学研究科 情報科学プログラム 博士後期課程
     - [先端ネットワーク研究室 (Network/Security R&D Group Advnet)](https://net.hiroshima-u.ac.jp/advnet/)
     - HU SPRING [次世代フェロー](https://www.hiroshima-u.ac.jp/fellowship/adopters-list) (2025年〜)
   - 叡啓大学 非常勤講師 (2025年〜)
     - 担当科目: ICT入門・プログラミング入門
+  - 経歴:
+    - 2023年3月 広島市立大学 情報科学部 卒業 — 学士 (情報工学)
+    - 2025年3月 広島大学 大学院先進理工系科学研究科 博士課程前期 修了 — 修士 (工学)
 
 events:
   - year: "2026.3"
@@ -171,34 +186,68 @@ events:
   #  url: ""
 
 talks:
-#  - year: "202"
-#    title: ""
-#    event: "iw2025"
-#    #url: "https://..."
-#  - year: "2025.11"
-#    title: "IPv6における端末への固有プレフィックス配布の現状と展望"
-#    event: "ITRC meet58 (北海道釧路市)"
-#    url: "https://example.com"
-#  - year: "202"
-#    title: ""
-#    event: "wide"
-#    #url: "https://..."
-#  - year: "202"
-#    title: ""
-#    event: "itrc青森"
-#    #url: "https://..."
-
-publications:
+  - year: "2025.11"
+    title: "IPv6-Mostly実証環境の構築とクライアントOS検証について"
+    event: "Internet Week 2025 (C5: IPv6-Mostly Networkで変わる運用のカタチ)"
+    url: "https://internetweek.jp/2025/archives/program/c5"
+  - year: "2025.11"
+    title: "IPv6における端末への固有プレフィックス配布の現状と展望"
+    event: "ITRC meet58 (北海道釧路市)"
+    url: "https://www.itrc.net/meet/58-cfp/"
   - year: "2025.7"
     title: "A Proposal of Policy Routing per End-Host in IPv6 Site Multi-homing using NPTv6"
-    url: ""
-    authors: "著者"
-    venue: "掲載誌"
+    event: "IEEE COMPSAC 2025 (Toronto, Canada)"
+    url: "https://ieeecompsac.computer.org/2025/"
   - year: "2025.6"
     title: "IPv6サイトマルチホーム環境におけるRAを活用した経路制御のセキュリティに関する考察"
-    url: ""
-    authors: "著者"
-    venue: "掲載誌"
+    event: "電子情報通信学会 IA研究会 (広島県広島市)"
+    url: "https://ken.ieice.org/ken/paper/20250623vcLB/"
+  - year: "2024.12"
+    title: "NPTv6を用いたIPv6サイトマルチホームにおけるエンドホスト単位のトラフィック制御手法の提案"
+    event: "第17回 インターネットと運用技術シンポジウム (IOTS 2024) (宮城県仙台市)"
+    url: "https://www.iot.ipsj.or.jp/symposium/iots2024/"
+  - year: "2023.12"
+    title: "小規模ユーザサイトにおけるIPv6マルチホーム環境の課題とその解決に向けて"
+    event: "WIDE研究会"
+  - year: "2023.11"
+    title: "小規模ユーザサイトにおけるIPv6マルチホーム環境の課題とその解決に向けて"
+    event: "ITRC meet54 (青森県青森市)"
+    url: "https://www.itrc.net/meet/54-cfp/"
+  - year: "2023.7"
+    title: "SRv6ネットワークにおける可用帯域推定に対する一検討"
+    event: "情報処理学会 第62回IOT研究会 (長崎県長崎市)"
+    url: "https://www.iot.ipsj.or.jp/meeting/62-program/"
+  - year: "2022.12"
+    title: "A Proposal of an Estimation Method of Network Resources using SRv6 for Dataflow Platform Management"
+    event: "AINTEC 2022 (広島県広島市・ポスター発表)"
+    url: "https://interlab.ait.ac.th/aintec2022/"
+
+  #- year: ""
+  #  title: ""
+  #  event: ""
+  #  url: ""
+
+publications:
+  - year: "2026.5"
+    title: "組織ネットワークにおけるIPv6-Mostly導入に向けた技術検証と課題整理"
+    url: "https://ipsj.ixsq.nii.ac.jp/records/2009646"
+    authors: "大脇 洋, 横尾 和真, 丁 曄澎, 小川 康一, 近堂 徹"
+    venue: "情報処理学会 研究報告インターネットと運用技術（IOT）, 2026-IOT-73, no.1, pp.1-7, 2026年5月."
+  - year: "2025.7"
+    title: "A Proposal of Policy Routing per End-Host in IPv6 Site Multi-homing using NPTv6"
+    url: "https://doi.org/10.1109/COMPSAC65507.2025.00208"
+    authors: "Kazuma Yokoo, Tohru Kondo, Hidenobu Watanabe, Kaori Maeda, Reiji Aibara"
+    venue: "Proc. of IEEE 49th Annual Computers, Software, and Applications Conference (COMPSAC 2025), pp.1559-1564, July 2025."
+  - year: "2025.6"
+    title: "IPv6サイトマルチホーム環境におけるRAを活用した経路制御のセキュリティに関する考察"
+    url: "https://ken.ieice.org/ken/paper/20250623vcLB/"
+    authors: "横尾 和真, 近堂 徹, 渡邉 英伸, 前田 香織, 相原 玲二"
+    venue: "電子情報通信学会 技術研究報告 (IA2025-1), vol.125, no.85, pp.1-7, 2025年6月."
+  - year: "2025.6"
+    title: "パッシブ計測を活用したThreadメッシュネットワークのトポロジー可視化手法の検討"
+    url: "https://ken.ieice.org/ken/paper/202506235cLb/"
+    authors: "前大 光稔, 横尾 和真, 丁 曄澎, 近堂 徹"
+    venue: "電子情報通信学会 技術研究報告 (IA2025-5), vol.125, no.85, pp.24-29, 2025年6月."
   - year: "2025.3"
     title: "SRv6ネットワークにおける可用帯域の推定精度に関する実験的評価"
     url: "https://ipsj.ixsq.nii.ac.jp/records/2001664"
@@ -220,7 +269,7 @@ oss:
     name: "radvd-project/radvd"
     description: |
       - [#234](https://github.com/radvd-project/radvd/pull/234)
-      - [(open)#276](https://github.com/radvd-project/radvd/pull/276)
+      - [#276](https://github.com/radvd-project/radvd/pull/276)
   - url: "https://github.com/YutaroHayakawa/go-ra"
     name: "YutaroHayakawa/go-ra"
     description: |

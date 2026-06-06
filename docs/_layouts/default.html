@@ -11,17 +11,19 @@
   <style>
     *, *::before, *::after { box-sizing: border-box; }
 
+    html { font-size: 17px; }
+
     body {
       margin: 0;
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      font-size: 15px;
+      font-size: 1rem;
       line-height: 1.75;
       color: #1e293b;
       background: #f8fafc;
     }
 
     .page-wrapper {
-      max-width: 740px;
+      max-width: 900px;
       margin: 0 auto;
       padding: 56px 24px 96px;
     }
@@ -399,7 +401,7 @@
             <div class="item-title">
               {% if item.url %}<a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}
             </div>
-            {% if item.authors %}<div class="item-sub">{{ item.authors }}</div>{% endif %}
+            {% if item.authors %}<div class="item-sub">{{ item.authors | replace: "横尾 和真", "<u>横尾 和真</u>" | replace: "Kazuma Yokoo", "<u>Kazuma Yokoo</u>" }}</div>{% endif %}
             {% if item.venue %}<div class="item-sub">{{ item.venue }}</div>{% endif %}
           </div>
         </li>
@@ -415,7 +417,7 @@
               <div class="item-title">
                 {% if item.url %}<a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}
               </div>
-              {% if item.authors %}<div class="item-sub">{{ item.authors }}</div>{% endif %}
+              {% if item.authors %}<div class="item-sub">{{ item.authors | replace: "横尾 和真", "<u>横尾 和真</u>" | replace: "Kazuma Yokoo", "<u>Kazuma Yokoo</u>" }}</div>{% endif %}
               {% if item.venue %}<div class="item-sub">{{ item.venue }}</div>{% endif %}
             </div>
           </li>

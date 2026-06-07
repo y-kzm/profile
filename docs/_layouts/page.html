@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZRVZYH28KQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-ZRVZYH28KQ');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html { font-size: 17px; }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 1rem;
+      line-height: 1.75;
+      color: #1e293b;
+      background: #f8fafc;
+    }
+
+    .page-wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 56px 24px 96px;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 0 0 32px;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 36px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    p, li { font-size: 0.95rem; color: #334155; }
+
+    a { color: #6366f1; }
+    a:hover { text-decoration: underline; }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 48px;
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      .page-wrapper { padding: 36px 18px 72px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    {{ content }}
+    <a class="back-link" href="{{ '/' | relative_url }}">&larr; Home</a>
+  </div>
+</body>
+</html>

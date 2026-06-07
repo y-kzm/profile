@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZRVZYH28KQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-ZRVZYH28KQ');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ site.title }}</title>
@@ -279,6 +288,23 @@
       background: #ede9fe;
       border-color: #c4b5fd;
     }
+
+    .site-footer {
+      margin-top: 64px;
+      padding-top: 20px;
+      border-top: 1px solid #e2e8f0;
+      font-size: 0.8rem;
+      color: #94a3b8;
+      text-align: center;
+    }
+    .site-footer a {
+      color: #94a3b8;
+      text-decoration: none;
+    }
+    .site-footer a:hover {
+      color: #6366f1;
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -462,6 +488,10 @@
       </div>
     </div>
     {% endif %}
+
+    <footer class="site-footer">
+      <a href="{{ '/privacy/' | relative_url }}">プライバシーポリシー</a>
+    </footer>
 
   </div>
   <script>

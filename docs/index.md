@@ -14,6 +14,9 @@ sns:
   - icon: "fab fa-github"
     label: "GitHub"
     url: "https://github.com/y-kzm"
+  - icon: "fab fa-linkedin"
+    label: "LinkedIn"
+    url: "https://www.linkedin.com/in/kazuma-yokoo-142267330"
   - icon: "fab fa-x-twitter"
     label: "X"
     url: "https://twitter.com/yy_kzm"
@@ -21,28 +24,30 @@ sns:
     label: "Hatena Blog"
     url: "https://y-kzm.hatenablog.com/"
 
-about: |
-  広島大学でコンピュータネットワークを研究している博士課程学生です。
+about_intro: |
+  広島大学でコンピュータネットワークを研究しています。
   次世代インターネットの基盤技術である IPv6 を軸に、経路制御・計測・運用管理・セキュリティといった幅広い観点から、ネットワークの高度利用に取り組んでいます。
-
-  「IPv6 だからこそ実現できる価値あるネットワークの創造」を目標に、研究と社会実装の橋渡しを志しています。
+  「IPv6 だからこそ実現できる価値あるネットワークの創造」を目標に、産学の橋渡しができる研究者を志しています。
   JANOG や Internet Week といった技術イベントへの積極的な参加、OSS へのコントリビューション、IPv6 ハンズオンの開催、技術雑誌への寄稿など、研究の枠を超えた活動にも取り組んでいます。
 
+about: |
   - Research Interests:
-    - IPv6 / SRv6 / ポリシールーティング
-    - ネットワーク運用管理
-    - ネットワーク計測 (アクティブ計測・可用帯域推定)
+    - IPv6 / SRv6
+    - サイトマルチホーミング / ポリシールーティング
+    - ネットワーク運用管理 / ネットワーク計測
     - ホームネットワーク / IoT (Thread・Matter)
     - IPv6 普及促進 / 社会実装 / 標準化
   - 所属:
     - 広島大学 先進理工系科学研究科 情報科学プログラム 博士後期課程
     - [先端ネットワーク研究室 (Network/Security R&D Group Advnet)](https://net.hiroshima-u.ac.jp/advnet/)
     - HU SPRING [次世代フェロー](https://www.hiroshima-u.ac.jp/fellowship/adopters-list) (2025年〜)
-  - 叡啓大学 非常勤講師 (2025年〜)
-    - 担当科目: ICT入門・プログラミング入門
   - 経歴:
-    - 2023年3月 広島市立大学 情報科学部 卒業 — 学士 (情報工学)
     - 2025年3月 広島大学 大学院先進理工系科学研究科 博士課程前期 修了 — 修士 (工学)
+    - 2023年3月 広島市立大学 情報科学部 卒業 — 学士 (情報工学)
+  - 職歴:
+    - 2025年-現在 叡啓大学 非常勤講師 (ICT入門 / プログラミング入門)
+    - 2025年-現在 株式会社アールシーエー ルータ開発アルバイト ([sdplane-oss](https://github.com/kait-cronos/sdplane-oss))
+    - 2023年-2025年 広島大学情報メディア教育研究センター 教務補佐員
 
 events:
   - year: "2026.3"
@@ -232,7 +237,7 @@ publications:
     title: "組織ネットワークにおけるIPv6-Mostly導入に向けた技術検証と課題整理"
     url: "https://ipsj.ixsq.nii.ac.jp/records/2009646"
     authors: "大脇 洋, 横尾 和真, 丁 曄澎, 小川 康一, 近堂 徹"
-    venue: "情報処理学会 研究報告インターネットと運用技術（IOT）, 2026-IOT-73, no.1, pp.1-7, 2026年5月."
+    venue: "情報処理学会 研究報告インターネットと運用技術（IOT）, 2026-IOT-73, no.1, pp.1-7, 2026年5月. (優秀学生賞受賞)"
   - year: "2025.7"
     title: "A Proposal of Policy Routing per End-Host in IPv6 Site Multi-homing using NPTv6"
     url: "https://doi.org/10.1109/COMPSAC65507.2025.00208"

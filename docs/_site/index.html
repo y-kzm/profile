@@ -152,6 +152,33 @@
       color: inherit;
       text-decoration: none;
     }
+
+    /* About intro card */
+    .about-intro {
+      position: relative;
+      background: linear-gradient(135deg, #f6f7ff 0%, #fafbff 100%);
+      border: 1px solid #e7e9fb;
+      border-radius: 14px;
+      padding: 24px 28px 24px 32px;
+      margin: 0 0 22px;
+      color: #334155;
+      font-size: 1.02rem;
+      line-height: 1.95;
+      overflow: hidden;
+    }
+    .about-intro::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: linear-gradient(180deg, #6366f1, #818cf8);
+    }
+    .about-intro p { margin: 0; }
+    @media (max-width: 600px) {
+      .about-intro { padding: 20px 18px 20px 22px; }
+    }
     .about-text a .ext-icon,
     .item-title a .ext-icon {
       font-size: 0.7em;
@@ -328,6 +355,10 @@
           <i class="fab fa-github"></i> GitHub
         </a>
         
+        <a href="https://www.linkedin.com/in/kazuma-yokoo-142267330" class="sns-link" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        
         <a href="https://twitter.com/yy_kzm" class="sns-link" target="_blank" rel="noopener">
           <i class="fab fa-x-twitter"></i> X
         </a>
@@ -342,18 +373,20 @@
     
     <div class="section">
       <h2>About</h2>
-      <div class="about-text"><p>広島大学でコンピュータネットワークを研究している博士課程学生です。
-次世代インターネットの基盤技術である IPv6 を軸に、経路制御・計測・運用管理・セキュリティといった幅広い観点から、ネットワークの高度利用に取り組んでいます。</p>
-
-<p>「IPv6 だからこそ実現できる価値あるネットワークの創造」を目標に、研究と社会実装の橋渡しを志しています。
+      
+      <div class="about-intro"><p>広島大学でコンピュータネットワークを研究しています。
+次世代インターネットの基盤技術である IPv6 を軸に、経路制御・計測・運用管理・セキュリティといった幅広い観点から、ネットワークの高度利用に取り組んでいます。
+「IPv6 だからこそ実現できる価値あるネットワークの創造」を目標に、産学の橋渡しができる研究者を志しています。
 JANOG や Internet Week といった技術イベントへの積極的な参加、OSS へのコントリビューション、IPv6 ハンズオンの開催、技術雑誌への寄稿など、研究の枠を超えた活動にも取り組んでいます。</p>
-
-<ul>
+</div>
+      
+      
+      <div class="about-text"><ul>
   <li>Research Interests:
     <ul>
-      <li>IPv6 / SRv6 / ポリシールーティング</li>
-      <li>ネットワーク運用管理</li>
-      <li>ネットワーク計測 (アクティブ計測・可用帯域推定)</li>
+      <li>IPv6 / SRv6</li>
+      <li>サイトマルチホーミング / ポリシールーティング</li>
+      <li>ネットワーク運用管理 / ネットワーク計測</li>
       <li>ホームネットワーク / IoT (Thread・Matter)</li>
       <li>IPv6 普及促進 / 社会実装 / 標準化</li>
     </ul>
@@ -365,19 +398,22 @@ JANOG や Internet Week といった技術イベントへの積極的な参加�
       <li>HU SPRING <a href="https://www.hiroshima-u.ac.jp/fellowship/adopters-list">次世代フェロー</a> (2025年〜)</li>
     </ul>
   </li>
-  <li>叡啓大学 非常勤講師 (2025年〜)
-    <ul>
-      <li>担当科目: ICT入門・プログラミング入門</li>
-    </ul>
-  </li>
   <li>経歴:
     <ul>
-      <li>2023年3月 広島市立大学 情報科学部 卒業 — 学士 (情報工学)</li>
       <li>2025年3月 広島大学 大学院先進理工系科学研究科 博士課程前期 修了 — 修士 (工学)</li>
+      <li>2023年3月 広島市立大学 情報科学部 卒業 — 学士 (情報工学)</li>
+    </ul>
+  </li>
+  <li>職歴:
+    <ul>
+      <li>2025年-現在 叡啓大学 非常勤講師 (ICT入門 / プログラミング入門)</li>
+      <li>2025年-現在 株式会社アールシーエー ルータ開発アルバイト (<a href="https://github.com/kait-cronos/sdplane-oss">sdplane-oss</a>)</li>
+      <li>2023年-2025年 広島大学情報メディア教育研究センター 教務補佐員</li>
     </ul>
   </li>
 </ul>
 </div>
+      
     </div>
     
 
@@ -821,7 +857,7 @@ JANOG や Internet Week といった技術イベントへの積極的な参加�
               <a href="https://ipsj.ixsq.nii.ac.jp/records/2009646" target="_blank" rel="noopener">組織ネットワークにおけるIPv6-Mostly導入に向けた技術検証と課題整理</a>
             </div>
             <div class="item-sub">大脇 洋, <u>横尾 和真</u>, 丁 曄澎, 小川 康一, 近堂 徹</div>
-            <div class="item-sub">情報処理学会 研究報告インターネットと運用技術（IOT）, 2026-IOT-73, no.1, pp.1-7, 2026年5月.</div>
+            <div class="item-sub">情報処理学会 研究報告インターネットと運用技術（IOT）, 2026-IOT-73, no.1, pp.1-7, 2026年5月. (優秀学生賞受賞)</div>
           </div>
         </li>
         

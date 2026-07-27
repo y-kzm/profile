@@ -50,6 +50,10 @@ about: |
     - 2023年-2025年 広島大学情報メディア教育研究センター 教務補佐員
 
 events:
+  - year: "2026.7"
+    name: "IPv6セミナー2026 Summer"
+    role: "講演者"
+    url: "https://www.ipv6hiroshima.jp/%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/ipv6%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC2026summer"
   - year: "2026.3"
     name: "IPv6ハンズオン2026 -IPv6-Mostly Networkを構築しよう-"
     role: "講師"
@@ -191,6 +195,10 @@ events:
   #  url: ""
 
 talks:
+  - year: "2026.7"
+    title: "IPv6-Mostly ハンズオンを開催してみた ー参加者の反応と、その後の展開ー"
+    event: "IPv6セミナー2026 Summer"
+    url: "https://www.ipv6hiroshima.jp/%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/ipv6%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC2026summer"
   - year: "2025.11"
     title: "IPv6-Mostly実証環境の構築とクライアントOS検証について"
     event: "Internet Week 2025 (C5: IPv6-Mostly Networkで変わる運用のカタチ)"

@@ -24,11 +24,11 @@ sns:
     label: "Hatena Blog"
     url: "https://y-kzm.hatenablog.com/"
 
-about_intro: |
-  広島大学でコンピュータネットワークを研究しています。
-  次世代インターネットの基盤技術である IPv6 を軸に、経路制御・計測・運用管理・セキュリティといった幅広い観点から、ネットワークの高度利用に取り組んでいます。
-  「IPv6 だからこそ実現できる価値あるネットワークの創造」を目標に、産学の橋渡しができる研究者を志しています。
-  JANOG や Internet Week といった技術イベントへの積極的な参加、OSS へのコントリビューション、IPv6 ハンズオンの開催、技術雑誌への寄稿など、研究の枠を超えた活動にも取り組んでいます。
+#about_intro: |
+#  広島大学でコンピュータネットワークを研究しています。
+#  次世代インターネットの基盤技術である IPv6 を軸に、経路制御・計測・運用管理・セキュリティといった幅広い観点から、ネットワークの高度利用に取り組んでいます。
+#  「IPv6 だからこそ実現できる価値あるネットワークの創造」を目標に、産学の橋渡しができる研究者を志しています。
+#  JANOG や Internet Week といった技術イベントへの積極的な参加、OSS へのコントリビューション、IPv6 ハンズオンの開催、技術雑誌への寄稿など、研究の枠を超えた活動にも取り組んでいます。
 
 about: |
   - Research Interests:
@@ -50,6 +50,14 @@ about: |
     - 2023年-2025年 広島大学情報メディア教育研究センター 教務補佐員
 
 events:
+  - year: "2026.11"
+    name: "ITRC meet60 @いこいの村　能登半島"
+    role: "一般参加"
+    url: "https://www.itrc.net/meet/60-cfp/"
+  - year: "2026.10"
+    name: "ドリーム・アーツ × 広島大学 | CAPTURE THE FLAG CONTEST 2026.10 in 広島大学"
+    role: "参加者"
+    url: "https://www.tss-tv.co.jp/tssnews/000036345.html"
   - year: "2026.7"
     name: "IPv6セミナー2026 Summer"
     role: "講演者"
@@ -241,6 +249,11 @@ talks:
   #  url: ""
 
 publications:
+  - year: "2026.7"
+    title: "Lightweight Topology Visualization for Thread Mesh Networks via Passive Measurement"
+    url: "https://ieeexplore.ieee.org/abstract/document/11676864"
+    authors: "Mitsutoshi Maeo, Kazuma Yokoo, Yepeng Ding, Tohru Kondo"
+    venue: "2026 IEEE International Workshop on Future Intelligent Technologies for Young Researchers (FITYR), Fukuoka, Japan, 2026, pp. 16-21."
   - year: "2026.5"
     title: "組織ネットワークにおけるIPv6-Mostly導入に向けた技術検証と課題整理"
     url: "https://ipsj.ixsq.nii.ac.jp/records/2009646"

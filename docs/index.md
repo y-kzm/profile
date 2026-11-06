@@ -42,8 +42,6 @@ about_groups:
     items:
       - title: "広島大学 先進理工系科学研究科 情報科学プログラム 博士後期課程"
         sub: "[先端ネットワーク研究室 (Network/Security R&D Group Advnet)](https://net.hiroshima-u.ac.jp/advnet/)"
-      - title: "HU SPRING [次世代フェロー](https://www.hiroshima-u.ac.jp/fellowship/adopters-list)"
-        sub: "2025年〜"
   - title: "経歴"
     dated: true
     items:
@@ -56,12 +54,14 @@ about_groups:
   - title: "職歴"
     dated: true
     items:
-      - year: "2025–"
+      - year: "2025–現在"
         title: "叡啓大学 非常勤講師"
         sub: "ICT入門 / プログラミング入門"
-      - year: "2025–"
+      - year: "2025–現在"
         title: "株式会社アールシーエー ルータ開発アルバイト"
         sub: "[sdplane-oss](https://github.com/kait-cronos/sdplane-oss)"
+      - year: "2025-現在"
+        title: "[HU SPRING 次世代フェロー](https://www.hiroshima-u.ac.jp/fellowship/adopters-list)"
       - year: "2023–25"
         title: "広島大学 情報メディア教育研究センター 教務補佐員"
 

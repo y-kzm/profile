@@ -30,24 +30,40 @@ sns:
 #  「IPv6 だからこそ実現できる価値あるネットワークの創造」を目標に、産学の橋渡しができる研究者を志しています。
 #  JANOG や Internet Week といった技術イベントへの積極的な参加、OSS へのコントリビューション、IPv6 ハンズオンの開催、技術雑誌への寄稿など、研究の枠を超えた活動にも取り組んでいます。
 
-about: |
-  - Research Interests
-    - IPv6 / SRv6
-    - サイトマルチホーミング / ポリシールーティング
-    - ネットワーク運用管理 / ネットワーク計測
-    - ホームネットワーク / IoT (Thread・Matter)
-    - IPv6 普及促進 / 社会実装 / 標準化
-  - 所属
-    - 広島大学 先進理工系科学研究科 情報科学プログラム 博士後期課程
-    - [先端ネットワーク研究室 (Network/Security R&D Group Advnet)](https://net.hiroshima-u.ac.jp/advnet/)
-    - HU SPRING [次世代フェロー](https://www.hiroshima-u.ac.jp/fellowship/adopters-list) (2025年〜)
-  - 経歴
-    - 2025年3月 広島大学 大学院先進理工系科学研究科 博士課程前期 修了 — 修士 (工学)
-    - 2023年3月 広島市立大学 情報科学部 卒業 — 学士 (情報工学)
-  - 職歴
-    - 2025年-現在 叡啓大学 非常勤講師 (ICT入門 / プログラミング入門)
-    - 2025年-現在 株式会社アールシーエー ルータ開発アルバイト ([sdplane-oss](https://github.com/kait-cronos/sdplane-oss))
-    - 2023年-2025年 広島大学情報メディア教育研究センター 教務補佐員
+about_groups:
+  - title: "Research Interests"
+    chips:
+      - "IPv6 / SRv6"
+      - "サイトマルチホーミング / ポリシールーティング"
+      - "ネットワーク運用管理 / ネットワーク計測"
+      - "ホームネットワーク / IoT (Thread・Matter)"
+      - "IPv6 普及促進 / 社会実装 / 標準化"
+  - title: "所属"
+    items:
+      - title: "広島大学 先進理工系科学研究科 情報科学プログラム 博士後期課程"
+        sub: "[先端ネットワーク研究室 (Network/Security R&D Group Advnet)](https://net.hiroshima-u.ac.jp/advnet/)"
+      - title: "HU SPRING [次世代フェロー](https://www.hiroshima-u.ac.jp/fellowship/adopters-list)"
+        sub: "2025年〜"
+  - title: "経歴"
+    dated: true
+    items:
+      - year: "2025.3"
+        title: "広島大学 大学院先進理工系科学研究科 博士課程前期 修了"
+        sub: "修士 (工学)"
+      - year: "2023.3"
+        title: "広島市立大学 情報科学部 卒業"
+        sub: "学士 (情報工学)"
+  - title: "職歴"
+    dated: true
+    items:
+      - year: "2025–"
+        title: "叡啓大学 非常勤講師"
+        sub: "ICT入門 / プログラミング入門"
+      - year: "2025–"
+        title: "株式会社アールシーエー ルータ開発アルバイト"
+        sub: "[sdplane-oss](https://github.com/kait-cronos/sdplane-oss)"
+      - year: "2023–25"
+        title: "広島大学 情報メディア教育研究センター 教務補佐員"
 
 events:
   - year: "2026.11"

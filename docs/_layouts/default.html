@@ -152,6 +152,46 @@
       color: inherit;
       text-decoration: none;
     }
+    .about-text a:hover { color: #6366f1; }
+
+    /* About list: same row style as .item-list (label column + body) */
+    .about-text > ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .about-text > ul > li {
+      display: grid;
+      grid-template-columns: 130px 1fr;
+      gap: 16px;
+      padding: 13px 0 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: #94a3b8;
+      letter-spacing: 0.02em;
+      line-height: 1.6;
+    }
+    .about-text > ul > li:last-child { border-bottom: none; }
+    .about-text > ul > li > ul {
+      list-style: none;
+      padding: 0;
+      margin: -3px 0 0;
+    }
+    .about-text > ul > li > ul > li {
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: #1e293b;
+      letter-spacing: 0;
+      line-height: 1.6;
+      padding: 3px 0;
+    }
+    @media (max-width: 600px) {
+      .about-text > ul > li {
+        grid-template-columns: 1fr;
+        gap: 4px;
+      }
+    }
 
     /* About intro card */
     .about-intro {

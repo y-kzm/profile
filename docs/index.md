@@ -60,9 +60,9 @@ about_groups:
       - year: "2025–現在"
         title: "株式会社アールシーエー ルータ開発アルバイト"
         sub: "[sdplane-oss](https://github.com/kait-cronos/sdplane-oss)"
-      - year: "2025-現在"
+      - year: "2025–現在"
         title: "[HU SPRING 次世代フェロー](https://www.hiroshima-u.ac.jp/fellowship/adopters-list)"
-      - year: "2023–25"
+      - year: "2023–2025"
         title: "広島大学 情報メディア教育研究センター 教務補佐員"
 
 events:
